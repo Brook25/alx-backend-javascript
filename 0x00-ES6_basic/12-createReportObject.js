@@ -1,6 +1,6 @@
 export default function createReportObject(allemployees) {
   return {
     allEmployees: allemployees,
-    getNumberOfDepartemnts: (allemps) => Object.keys(allemps).length,
+    getNumberOfDepartments: (allemps) => Object.keys(allemps).length,
   };
 }
