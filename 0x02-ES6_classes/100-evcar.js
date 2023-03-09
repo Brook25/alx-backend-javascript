@@ -8,8 +8,8 @@ export default class EVCar extends Car {
 
   cloneCar() {
     if (this) {
-      const new_car = new Car();
-      return new_car;
+      return new Car();
     }
+    return undefined;
   }
 }
