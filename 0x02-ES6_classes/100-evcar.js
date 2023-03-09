@@ -6,7 +6,7 @@ export default class EVCar extends Car {
     this._range = range;
   }
 
-  clonecar() {
-    return new Car.constructor();
+  cloneCar() {
+    return new Car();
   }
 }
