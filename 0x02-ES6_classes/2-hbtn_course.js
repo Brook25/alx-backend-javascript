@@ -43,7 +43,7 @@ export default class HolbertonCourse {
   set students(sts) {
     if (!Array.isArray(sts) || sts.find((x) => typeof x !== 'string') !== undefined) {
       throw TypeError('Students must be an array');
-    } 
+    }
     this._students = sts;
   }
 }
