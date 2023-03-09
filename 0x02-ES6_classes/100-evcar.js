@@ -7,8 +7,9 @@ export default class EVCar extends Car {
   }
 
   cloneCar() {
-    if(this) {
-      return new Car();
+    if (this) {
+      const new_car = new Car();
+      return new_car;
     }
   }
 }
