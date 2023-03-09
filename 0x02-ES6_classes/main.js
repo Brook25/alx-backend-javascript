@@ -1,5 +1,5 @@
-import ClassRoom from "./0-classroom.js";
+import listOfStudents from "./9-hoisting.js";
 
-const room = new ClassRoom(10);
-console.log(room._maxStudentsSize)
-
+test("listOfStudents has the correct length", () => {
+  expect(listOfStudents.length).toBe(5);
+});
