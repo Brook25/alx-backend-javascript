@@ -3,10 +3,12 @@ export default function handleResponseFromAPI(promise) {
     return {
       status: 200,
       body: 'success',
-    }}
+    }
+  }
     ,
      (reject) => {
-      return new Error()}
+      return new Error()
+     }
      )
    console.log('Got a response from the API');
    return prom;
