@@ -5,7 +5,7 @@ function countStudents(path) {
     fs.readFile(path, (error, data) => {
       if (error) reject(Error('Cannot load the database'));
       if (data) {
-        const response = [];
+        const resp = [];
         const content = data.toString();
         const chainStudents = content.split('\n');
         let students = chainStudents.filter((item) => item);
@@ -13,7 +13,7 @@ function countStudents(path) {
         const NUMBER_OF_STUDENTS = students.length ? students.length - 1 : 0;
         const msg = `Number of students: ${NUMBER_OF_STUDENTS}`;
         console.log(msg);
-        response.push(msg);
+        resp.push(msg);
 
         students = students.slice(1);
         const dict = {};
@@ -29,10 +29,10 @@ function countStudents(path) {
           if (i) {
             const msg2 = `Number of students in ${i}: ${dict[i].length}. List: ${dict[i].join(', ')}`;
             console.log(msg2);
-            response.push(msg2);
+            resp.push(msg2);
           }
         }
-        resolve(response);
+        resolve(resp);
       }
     });
   });

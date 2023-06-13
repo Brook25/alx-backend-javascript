@@ -1,14 +1,14 @@
 const fs = require('fs');
 
 function countStudents(path) {
-  let content;
+  let cont;
   try {
-    content = fs.readFileSync(`${path}`, { encoding: 'utf8' });
+    cont = fs.readFileSync(`${path}`, { encoding: 'utf8' });
   } catch (err) {
     throw new Error('Cannot load the database');
   }
-  const chainStudents = content.split('\n');
-  let students = chainStudents.filter((item) => item);
+  const chainSts = cont.split('\n');
+  let students = chainSts.filter((item) => item);
 
   const NUMBER_OF_STUDENTS = students.length ? students.length - 1 : 0;
   console.log(`Number of students: ${NUMBER_OF_STUDENTS}`);
