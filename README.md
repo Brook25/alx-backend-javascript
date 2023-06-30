@@ -1,4 +1,4 @@
-# 0x00. ES6 Basics
+## 0x00. ES6 Basics
 
 1. What ES6 is
 2. New features introduced in ES6
