@@ -23,6 +23,6 @@ fs.readFile('database.csv', 'utf-8', (err, data) => {
     if (student[3] === elem)
 	  studentsInField.push(student[0]);
     });
-  console.log(`Number of students in ${elem}: ${student_count}. List ${studentsInField.join(', ')}`);
+  console.log(`Number of students in ${elem}: ${student_count}. List: ${studentsInField.join(', ')}`);
 });
 });
