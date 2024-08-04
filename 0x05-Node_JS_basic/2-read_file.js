@@ -3,7 +3,7 @@ fs = require('fs');
 fs.readFile('database.csv', 'utf-8', (err, data) => { 
   if (err)
     throw new Error('Cannot load the database');
-  const lines = data.split('\n').slice(1, -1);
+  const lines = data.split('\n').slice(1);
   console.log('Number of students: ' + lines.length);
   student_data = lines.map((elem) => {
     return elem.split(',')
